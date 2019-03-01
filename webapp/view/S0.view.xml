@@ -1,0 +1,24 @@
+<mvc:View controllerName="ovly.traducao.controller.S0" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page title="{view>/pageTitle}">
+					<content>
+						<Label class="sapUiMediumMargin" text="{i18n>address}"/>
+						<Input class="sapUiResponsiveMargin" value="" enabled="true"/>
+					</content>
+					<footer>
+						<Bar>
+							<contentLeft>
+								<Button press="onCreate" text="{i18n>create}"/>
+							</contentLeft>
+							<contentRight>
+								<Button press="onEdit" text="{i18n>edit}"/>
+							</contentRight>
+						</Bar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
